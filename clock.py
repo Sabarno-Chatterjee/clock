@@ -71,3 +71,5 @@ class Clock:
         self.hand.pendown()
         self.hand.pensize(2)
         self.hand.forward(600)
+
+
