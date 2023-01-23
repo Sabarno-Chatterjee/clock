@@ -4,8 +4,8 @@ import datetime
 
 screen = Screen()
 screen.title("Clock")
-screen.setup(1000, 1000)
-screen.setworldcoordinates(-1000, -1000, 1000, 1000)
+screen.setup(800, 800)
+screen.setworldcoordinates(-800, -800, 800, 800)
 screen.tracer(0, 0)
 screen.bgcolor("yellow green")
 
@@ -18,7 +18,7 @@ def animate():
     clock.second = d.second
     clock.draw_hand()
     screen.update()
-    screen.ontimer(animate, 1000)
+    screen.ontimer(animate, 800)
 
 
 d = datetime.datetime.now()
